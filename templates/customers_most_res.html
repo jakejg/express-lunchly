@@ -7,7 +7,7 @@
 
 <ol style="column-count: 4">
   {% for customer in customers %}
-  <li><a href="/{{ customer.id }}/">{{ customer.getFullName() }}</a> ({{customer.numRes}})</li>
+  <li><a href="/{{ customer.id }}/">{{ customer.fullName }}</a> ({{customer.numRes}})</li>
   {% endfor %}
 </ol>
 

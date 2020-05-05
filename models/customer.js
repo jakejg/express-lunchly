@@ -60,7 +60,7 @@ class Customer {
   }
 
   /** get first and last name for this customer. */
-  getFullName() {
+  get fullName() {
     return this.firstName + " " + this.lastName;
   }
 
