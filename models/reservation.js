@@ -14,6 +14,17 @@ class Reservation {
     this.numGuests = numGuests;
     this.startAt = startAt;
     this.notes = notes;
+    
+  }
+  set numGuests(val){
+    if (val < 1) {
+      throw new Error("Reservations must be for at least 1 person")
+    }
+    this._numGuests = val;
+  }
+
+  get numGuests(){
+    return this._numGuests
   }
 
   /** formatter for startAt */
@@ -60,6 +71,7 @@ class Reservation {
       );
     }
   }
-
+  
+  
 }
 module.exports = Reservation;
